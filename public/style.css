@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    padding: 2em;
+}
+
+main > article {
+    flex-grow: 3;
+}
+
+main > aside {
+    flex-grow: 1;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+fieldset {
+    padding: 12px;
+}
+
+.unit {
+    font-weight: bold;
+}
+
+.hided-input {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        flex-direction: column;
+    }
+}
